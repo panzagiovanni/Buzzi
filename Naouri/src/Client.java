@@ -20,7 +20,10 @@ public class Client {
                 if (scelta.equalsIgnoreCase("esci")) {
                     break;
                 }
-/*
+                
+                /* 
+                 Prof. Panza: la parte di codice sottostante che ti ho commentato generava dei problemi perchè il programma Server 
+                 è fatto per ricevere gli operandi e l'operatore in un unico input (somma 5 3, ecc.)
                 System.out.print("Inserisci il primo numero: ");
                 int num1 = Integer.parseInt(tastiera.readLine());
 
@@ -28,7 +31,7 @@ public class Client {
                 int num2 = Integer.parseInt(tastiera.readLine());
 
                 out.writeBytes(num1 + " " + num2 + "\n");
-*/
+                */
                 System.out.println("Attendo risposta dal server...");
                 String risposta = in.readLine();
                 System.out.println("Risposta del Server: " + risposta);
