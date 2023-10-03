@@ -13,7 +13,7 @@ public class Client {
             do {
                 tastiera = new BufferedReader(new InputStreamReader(System.in));
 
-                System.out.print("Inserisci un'operazione (somma, sottrai, moltiplica, dividi, esci): ");
+                System.out.print("Inserisci un'operazione (somma n1 n2, sottrai ..., moltiplica ... , dividi ..., oppure  esci): ");
                 String scelta = tastiera.readLine();
                 out.writeBytes(scelta + "\n");
 
