@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Buzzi.iml" filepath="$PROJECT_DIR$/Buzzi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TPSIT_5U/Pozzi_SvegliaMonitor/Pozzi_SvegliaMonitor.iml" filepath="$PROJECT_DIR$/TPSIT_5U/Pozzi_SvegliaMonitor/Pozzi_SvegliaMonitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/TPSIT_5H/TPSIT_5H.iml" filepath="$PROJECT_DIR$/TPSIT_5H/TPSIT_5H.iml" />
       <module fileurl="file://$PROJECT_DIR$/TPSIT_5U/TPSIT_5U.iml" filepath="$PROJECT_DIR$/TPSIT_5U/TPSIT_5U.iml" />
     </modules>
