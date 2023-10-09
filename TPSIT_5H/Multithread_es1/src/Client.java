@@ -16,8 +16,12 @@ public class Client {
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
     }
 
-    public String sendMessage(String msg) throws IOException {
+    public void sendMessage(String msg) throws IOException {
         out.println(msg);
+
+    }
+
+    public String receiveMessage() throws IOException {
         String resp = in.readLine();
         return resp;
     }
@@ -31,7 +35,7 @@ public class Client {
 
         Client c=new Client();
         c.startConnection("localhost",12345);
-
+        System.out.println(c.receiveMessage());
 
     }
 

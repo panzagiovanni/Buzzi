@@ -10,13 +10,12 @@ class ClientHandler implements Runnable {
 
     @Override
     public void run() {
-        try {
-            // Qui puoi gestire la logica specifica per il client, ad esempio leggere/scrivere dati
-            // Utilizza clientSocket.getInputStream() e clientSocket.getOutputStream() per comunicare con il client
-            // Chiudi la connessione quando hai finito
-            clientSocket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+        // Qui puoi gestire la logica specifica per il client, ad esempio leggere/scrivere dati
+        // Utilizza clientSocket.getInputStream() e clientSocket.getOutputStream() per comunicare con il client
+        // Chiudi la connessione quando hai finito
+        while (true)
+        {
+
         }
     }
 }
