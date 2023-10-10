@@ -1,3 +1,8 @@
+/* 
+La classe Client crea una connessione con il server passandogli l'indirizzo IP e la porta del server. 
+Dopo aver stabilito la connessione, il client può inviare e ricevere messaggi dal server.
+*/
+
 public class Client {
 
     private Socket socket;
