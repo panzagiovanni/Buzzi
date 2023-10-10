@@ -1,3 +1,9 @@
+/*
+La classe Server crea un socket server sulla porta specificata. 
+Quando un client si connette al server, il server crea un thread (Gestore - Handler) per gestire la connessione. 
+Il thread legge il messaggio inviato dal client e invia un messaggio di risposta.
+*/
+
 public class Server {
 
     private ServerSocket serverSocket;
@@ -9,33 +15,9 @@ public class Server {
     public void start() throws IOException {
         while (true) {
             Socket socket = serverSocket.accept();
-            Thread thread = new Thread(new Handler(socket));
+            Thread thread = new Thread(new Gestore(socket));
             thread.start();
         }
-    }
-
-    private class Handler implements Runnable {
-
-        private Socket socket;
-
-        public Handler(Socket socket) {
-            this.socket = socket;
-        }
-
-        @Override
-        public void run() {
-            try {
-                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
-                String message = in.readLine();
-                out.println("Messaggio ricevuto: " + message);
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
     }
 
 }
