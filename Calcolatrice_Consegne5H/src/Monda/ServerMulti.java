@@ -1,4 +1,4 @@
-package Moda;
+package Monda;
 import java.net.*;
 public class ServerMulti {
     //definiamo le variabili

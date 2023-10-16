@@ -1,4 +1,4 @@
-package Moda;
+package Monda;
 
 public class Calcolatrice {
 	
